@@ -23,7 +23,7 @@
               <a href="{{route('home')}}" class="nav-link">Home </a>
             </li>
             <li class="nav-item">
-              <a href="{{route('categories')}}" class="nav-link">Categories</a>
+              <a href="{{route('categories')}}" class="nav-link">Kategori</a>
             </li>
             @guest
                 <li class="nav-item">
@@ -58,7 +58,7 @@
                         <a href="{{ route('home') }}" class="dropdown-item">Home</a>
                         <a href="{{ route('dashboard-product') }}" class="dropdown-item">Dashboard</a>
                         <a href="{{ route('dashboard-settings-account') }}" class="dropdown-item">
-                            Settings
+                            Pengaturan
                         </a>
                         <div class="dropdown-divider"></div>
                             <a class="dropdown-item" href="{{ route('logout') }}"

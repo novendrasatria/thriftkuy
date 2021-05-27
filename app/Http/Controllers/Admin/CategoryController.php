@@ -6,10 +6,10 @@ use App\Category;
 use App\Http\Requests\Admin\CategoryRequest;
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
-use Illuminate\Support\Facades\Storage;
-use Illuminate\Support\Str;
+use Illuminate\Support\Facades\Storage; //memanggil storage untuk foto
+use Illuminate\Support\Str; //memanggil Str Slug
 
-use Yajra\DataTables\Facades\DataTables;
+use Yajra\DataTables\Facades\DataTables; //memanggil //memanggil storage untuk foto
 
 class CategoryController extends Controller
 {
@@ -104,9 +104,9 @@ class CategoryController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function edit($id)
+    public function edit($id) //fungsi untuk klik sunting
     {
-        $item = Category::findOrFail($id);
+        $item = Category::findOrFail($id); //findOrFail akan mengembalikan 404 jika data tidak ditemukan, jika data dotemukan maka akan mengembalikan view bawah ini
 
         return view('pages.admin.category.edit',[
             'item' => $item
@@ -120,7 +120,7 @@ class CategoryController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, $id)
+    public function update(Request $request, $id) //fungsi untuk operasi edit data
     {
         $data = $request->all();
 

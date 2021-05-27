@@ -138,15 +138,27 @@
                                 @endforeach
                             </select>
                                 </div>
+                                                <div class="form-group">
+                            <label class="text-danger">Ketentuan</label>
+                            <p class="text-muted">
+                                <ol  style="text-align: justify;">Pengguna Thriftkuy diharap untuk memberi informasi kondisi barang yang ditawarkan secara lengkap.</ol>
+                                <ol  style="text-align: justify;">Pengguna Thriftkuy diharap untuk mencantumkan kontak secara jelas.</ol>
+                                <ol  style="text-align: justify;">Demi keamanan, transaksi lebih diutamakan via COD atau REKBER.</ol>
+                                <ol  style="text-align: justify;">Akun Pengguna akan dinonaktifkan ketika terdapat pelanggaran</ol>
+                                <ol  style="text-align: justify;">Kontak layanan: thriftkuy@gmail.com | 0838-123-4567</ol>
+                            </p>
+                            
+                            </div>
+                        </div>
                                 <button
                             type="submit"
                             class="btn btn-success btn-block mt-4"
                             :disabled="this.email_unavailable"
                             >
-                            Sign Up Now
+                            Sign Up
                         </button>
                         <a href="{{ route('login') }}" class="btn btn-signup btn-block mt-2">
-                            Back to Sign In
+                            Kembali ke Sign In
                                 </button>
                             </form>
                         </div>

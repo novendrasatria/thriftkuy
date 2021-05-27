@@ -20,7 +20,7 @@ Route::get('/details/{id}', 'DetailController@index')->name('detail');
 //Route::post('/details/{id}', 'DetailController@add')->name('detail-add');
 Route::get('/register/success', 'Auth\RegisterController@success')->name('register-success');
 
-Route::group(['middleware'=>['auth']], function(){
+Route::group(['middleware'=>['auth']], function(){ //dilakukan grouping sesuai dengan user yang sudah authentikasi/login
         Route::get('/dashboard', 'DashboardController@index')->name('dashboard');
         Route::get('/dashboard/products', 'DashboardProductController@index')
                 ->name('dashboard-product');
@@ -46,11 +46,12 @@ Route::group(['middleware'=>['auth']], function(){
                 ->name('dashboard-settings-redirect');
 });
 
-Route::prefix('admin') //Hanya admin yg bisa masuk
+Route::prefix('admin') //Mengelompokkan route halaman admin menggunakan prefix agar tidak perlu menulis ulang admin/, nantinya Hanya admin yg bisa masuk
         ->namespace('Admin')
-        ->middleware(['auth','admin'])
+        ->middleware(['auth','admin']) //auth untuk memverifikasi bahwa user telah login dan yg login merupakan user admin
         ->group(function() {
                 Route::get('/','DashboardController@index')->name('admin-dashboard');
+                //resource, otomatis pada controller yang terdapat pada folder admin sudah berisi fungsi crud
                 Route::resource('category','CategoryController');
                 Route::resource('user','UserController');
                 Route::resource('product','ProductController');

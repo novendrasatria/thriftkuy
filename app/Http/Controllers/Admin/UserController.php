@@ -76,7 +76,7 @@ class UserController extends Controller
     {
         $data = $request->all();
 
-        $data['password'] = bcrypt($request->password);
+        $data['password'] = bcrypt($request->password); //hashing password menggunakan bcrypt dari laravel
 
         User::create($data);
 

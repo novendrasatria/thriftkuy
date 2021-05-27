@@ -11,7 +11,7 @@
         <div class="container">
           <div class="row">
             <div class="col-12" data-aos="fade-up">
-              <h5>All Categories</h5>
+              <h5>Semua Kategori</h5>
             </div>
           </div>
           <div class="row">
@@ -51,7 +51,7 @@
         <div class="container">
           <div class="row">
             <div class="col-12" data-aos="fade-up">
-              <h5>Iklan Baru</h5>
+              <h5>Iklan</h5>
             </div>
           </div>
           <div class="row">

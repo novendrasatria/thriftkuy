@@ -30,19 +30,19 @@
               href="{{ route('dashboard-product') }}"
               class="list-group-item list-group-item-action {{ (request()->is('dashboard/products*')) ? 'active' : '' }} "
             >
-              My Products
+              Produk Saya
             </a>
             <a
               href="{{ route('dashboard-settings-store') }}"
               class="list-group-item list-group-item-action {{ (request()->is('dashboard/settings*')) ? 'active' : '' }} "
             >
-              Store Settings
+              Pengaturan Toko
             </a>
             <a
               href="{{ route('dashboard-settings-account') }}"
               class="list-group-item list-group-item-action {{ (request()->is('dashboard/account*')) ? 'active' : '' }} "
             >
-              My Account
+              Akun Saya
             </a>
             <a
                href="{{ route('logout') }}"

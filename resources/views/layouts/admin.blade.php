@@ -31,19 +31,19 @@
             <a
               href="{{route('product.index')}}"
               class="list-group-item list-group-item-action {{ (request()->is('admin/product')) ? 'active' : '' }}"
-              >Products</a>
+              >Produk</a>
                <a
               href="{{route('product-gallery.index')}}"
               class="list-group-item list-group-item-action {{ (request()->is('admin/product-gallery*')) ? 'active' : '' }}"
-              >Galleries</a>
+              >Galeri</a>
             <a
               href="{{route('category.index')}}"
               class="list-group-item list-group-item-action {{ (request()->is('admin/category*')) ? 'active' : '' }}" 
-              >Categories</a>     <!-- statement untuk menandai jika admin sedang aktif -->
+              >Kategori</a>     <!-- statement untuk menandai jika admin sedang aktif -->
                <a
               href="{{route('user.index')}}"
               class="list-group-item list-group-item-action {{ (request()->is('admin/user*')) ? 'active' : '' }}" 
-              >Users</a>
+              >User</a>
                <a
               href="/index.html"
               class="list-group-item list-group-item-action"
@@ -99,10 +99,10 @@
                   </a>
                   <div class="dropdown-menu" aria-labelledby="navbarDropdown">
                     <a class="dropdown-item" href="/index.html"
-                      >Back to Store</a
+                      >Kembali</a
                     >
                     <a class="dropdown-item" href="/dashboard-account.html"
-                      >Settings</a
+                      >Pengaturan</a
                     >
                     <div class="dropdown-divider"></div>
                     <a class="dropdown-item" href="/">Logout</a>
@@ -131,6 +131,7 @@
     @stack('prepend-script')
     <script src="/vendor/jquery/jquery.min.js"></script>
     <script src="/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+     <!-- Datatables -->
     <script type="text/javascript" src="https://cdn.datatables.net/v/bs4/dt-1.10.22/datatables.min.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>

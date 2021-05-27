@@ -25,8 +25,8 @@ class UserRequest extends FormRequest
     {
         return [
             'name'=>'required|string|max:50', 
-            'email'=>'required|email|unique:users', 
-            'roles'=>'nullable|string|in:ADMIN,USER'
+            'email'=>'required|email|unique:users',  //data email dbuat unique, untuk mengecek apakah email sudah digunakan untuk users sebelumnya atau belum
+            'roles'=>'nullable|string|in:ADMIN,USER' //in:ADMIN,USER berarti inputannya hanya ada 2, ADMIN atau USER
         ];
     }
 }

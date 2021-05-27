@@ -53,7 +53,7 @@
                       type="submit"
                       class="btn btn-success px-5"
                     >
-                      Save Now
+                      Simpan
                     </button>
                   </div>
               </div>

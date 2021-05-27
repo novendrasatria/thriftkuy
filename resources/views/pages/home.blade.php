@@ -26,13 +26,6 @@
                 <div class="carousel-inner">
                   <div class="carousel-item active">
                     <img
-                      src="/images/banner.jpg"
-                      class="d-block w-100"
-                      alt="Carousel Image"
-                    />
-                  </div>
-                  <div class="carousel-item">
-                    <img
                       src="/images/banner3.jpg"
                       class="d-block w-100"
                       alt="Carousel Image"
@@ -55,7 +48,7 @@
         <div class="container">
           <div class="row">
             <div class="col-12" data-aos="fade-up">
-              <h5>Trend Categories</h5>
+              <h5>Trend Kategori</h5>
             </div>
           </div>
           <div class="row">
@@ -95,7 +88,7 @@
         <div class="container">
           <div class="row">
             <div class="col-12" data-aos="fade-up">
-              <h5>Iklan Baru</h5>
+              <h5>Iklan </h5>
             </div>
           </div>
           <div class="row">

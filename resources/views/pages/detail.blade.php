@@ -69,13 +69,14 @@
               <div class="col-lg-8">
                 <h1>{{$product->name}}</h1>
                 <div class="owner">By {{$product->user->store_name}}</div>
-                <div class="owner">
+                <div class="text-info">
                   @if($product->user->store_status==0)
                   Status Toko : Tutup
                   @else
                   Status Toko : Buka
                   @endif
                 </div>
+                <div class="text-danger">{{$product->status}}</div>
                 <div class="price">Rp.{{number_format($product->price)}}</div>
               </div>
               <div class="col-lg-2" data-aos="zoom-in">

@@ -35,7 +35,7 @@
                           <div class="row">
                             <div class="col-md-6">
                               <div class="form-group">
-                                <label for="name">Product Name</label>
+                                <label for="name">Nama Produk</label>
                                 <input
                                   type="text"
                                   class="form-control"
@@ -48,7 +48,7 @@
                             </div>
                             <div class="col-md-6">
                               <div class="form-group">
-                                <label for="price">Price</label>
+                                <label for="price">Harga</label>
                                 <input
                                   type="number"
                                   class="form-control"
@@ -69,10 +69,19 @@
                                 @endforeach
                                 </select>
                              </div>
+                            </div>
+                             <div class="col-md-12">
+                              <div class="form-group">
+                                <label>Status</label>
+                                <select name="status" class="form-control">
+                                <option>Ready</option>
+                                <option>Terjual</option>
+                                </select>
+                             </div>
                            </div>
                             <div class="col-md-12">
                               <div class="form-group">
-                                <label for="description">Description</label>
+                                <label for="description">Deskripsi</label>
                                 <textarea name="description" id="editor">{!! $product->description !!}</textarea>
                               </div>
                             </div>
@@ -125,7 +134,7 @@
                       type="button"
                       class="btn btn-secondary btn-block mt-3"
                       onclick="thisFileUpload()">
-                              Add Photo
+                              Tambahkan Foto
                             </button>
                             </form>
                           </div>

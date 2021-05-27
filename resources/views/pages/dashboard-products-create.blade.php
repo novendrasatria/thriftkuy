@@ -55,6 +55,15 @@
                               </select>
                             </div>
                           </div>
+                          <div class="col-md-12">
+                              <div class="form-group">
+                                <label>Status</label>
+                                <select name="status" class="form-control">
+                                <option value="Ready">Default (Ready)</option>
+                                <option>Terjual</option>
+                                </select>
+                             </div>
+                           </div>
                             <div class="col-md-12">
                               <div class="form-group">
                                 <label for="description">Deskripsi</label>
@@ -66,7 +75,6 @@
                                 <label for="thumbnails">Thumbnails</label>
                                  <input type="file" name="photo" class="form-control" />
                                 <p class="text-muted">
-                                  Kamu dapat memilih lebih dari satu file
                                 </p>
                               </div>
                             </div>
